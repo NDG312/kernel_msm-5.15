@@ -323,7 +323,7 @@ jobs:
          echo 'KBUILD_CFLAGS += -Wno-implicit-function-declaration' >> Makefile
          echo "Custom Makefile line added successfully"
 
-            - name: "🐳 Droidspaces support"
+      - name: "🐳 Droidspaces support"
         if: contains(matrix.kernel.name, 'CLO')
         working-directory: ${{ env.KERNEL_LOC_DIR }}/${{ env.KERNEL_NAME }}
         run: |
